@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Macey Login Form</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="tops">
+
+
+		    <h1>Registration Form</h1>
+		    <p>Please fill out this form with the required information</p>
+		    <form action="">
+			    <fieldset class="fOne">
+				   <legend>Personal information</legend>
+   
+				   <label for="firstName">Enter Your First Name: <input id="firstName" type="text" required></label>
+   
+				   <label for="lastName">Enter Your Last Name: <input id="lastName" type="text" required></label>
+   
+				   <label for="userEmail">Enter Your Email: <input id="userEmail" type="email" required></label>
+   
+				   <label for="newPassword">Create a New Password: <input id="newPassword" type="password" minlength="8" required></label>
+
+			    </fieldset>
+
+			    <fieldset class="fTwo">
+				   <legend>Account information</legend>
+   
+				   <label for="selfAcc"><input id="selfAcc" name="accType" type="radio"> Personal Account</label>
+   
+				   <label for="bizAcc"><input id="bizAcc" name="accType" type="radio"> Business Account</label>
+   
+				   <label for="orgAcc"><input id="orgAcc" name="accType" type="radio"> Organization /Others</label>
+   
+				   <label for="TandC"><input id="TandC" type="checkbox" required> I accept the <a href="#"> terms and conditions</a></label>
+   
+			    </fieldset>
+
+			    <fieldset class="fThree">
+				    <label for="profilePic">Upload a profile picture: <input type="file" id="profilePic" /></label>
+                
+
+				    <label for="referrer">How did you hear about us?
+				    	<select id="referrer">
+				    	  <option value="">(select one)</option>
+				    	  <option value="1">freeCodeCamp News</option>
+				    	  <option value="2">freeCodeCamp YouTube Channel</option>
+				    	  <option value="3">freeCodeCamp Forum</option>
+				    	  <option value="4">Other</option>
+				    	</select>
+				    </label>
+
+			
+				    <label for="bio">Provide a bio:
+				         <textarea id="bio" rows="3" cols="30" placeholder="Tell us about yourself"></textarea>
+				    </label>
+					
+					<input type="submit" value="Submit">
+
+			    </fieldset>
+		    </form>
+
+	    </div>
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
